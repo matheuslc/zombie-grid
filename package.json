@@ -1,0 +1,14 @@
+{
+  "name": "ZombieGrid",
+  "version": "0.0.1",
+  "description": "A zombie grid",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matheuslc/zombie-grid.git"
+  },
+  "author": "Matheus Lucca do Carmo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matheuslc/zombie-grid/issues"
+  }
+}

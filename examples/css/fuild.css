@@ -1,0 +1,126 @@
+/**
+ * Fixed Example using Zombie Grid
+ */
+/**
+ * Name: Zombie Grid
+ * Author: Matheus Lucca do Carmo / me@matheuslc.com
+ * Version: 0.0.1
+ */
+/* line 17, ../../css/sass/zombie-grid.scss */
+body {
+  width: 100%;
+  margin: 0;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-12, header {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-11 {
+  display: inline;
+  float: left;
+  width: 91.66667%;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-10 {
+  display: inline;
+  float: left;
+  width: 83.33333%;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-9 {
+  display: inline;
+  float: left;
+  width: 75%;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-8, article {
+  display: inline;
+  float: left;
+  width: 66.66667%;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-7 {
+  display: inline;
+  float: left;
+  width: 58.33333%;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-6 {
+  display: inline;
+  float: left;
+  width: 50%;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-5 {
+  display: inline;
+  float: left;
+  width: 41.66667%;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-4, aside {
+  display: inline;
+  float: left;
+  width: 33.33333%;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-3 {
+  display: inline;
+  float: left;
+  width: 25%;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-2 {
+  display: inline;
+  float: left;
+  width: 16.66667%;
+}
+
+/* line 29, ../../css/sass/zombie-grid.scss */
+.zombie-1 {
+  display: inline;
+  float: left;
+  width: 8.33333%;
+}
+
+/* line 48, ../../css/sass/zombie-grid.scss */
+body {
+  *zoom: 1;
+}
+/* line 52, ../../css/sass/zombie-grid.scss */
+body:before, body:after {
+  content: "";
+  display: table;
+}
+/* line 56, ../../css/sass/zombie-grid.scss */
+body:after {
+  clear: both;
+}
+
+/* line 19, fuild.scss */
+header {
+  background-color: red;
+}
+
+/* line 25, fuild.scss */
+article {
+  background-color: blue;
+}
+
+/* line 30, fuild.scss */
+aside {
+  background-color: yellow;
+}
