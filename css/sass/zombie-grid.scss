@@ -45,9 +45,12 @@ $width: 100%; // If you want a fixed grid, change to 960px
 @for $i from 0 to $columns {
   // Thanks for Lucas Bebber for that help http://codepen.io/lbebber/
   $j: $columns - $i;
-  .zombie-#{$j}{ 
-   float: left;
-   width: ($width / $columns ) * $j;
+  .zombie-#{$j}{
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+    float: left;
+    width: ($width / $columns ) * $j;
   }
 }
 
@@ -55,9 +58,6 @@ $width: 100%; // If you want a fixed grid, change to 960px
 %wrapper {
 	@extend %clearfix;
 	display: block;
-	-webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-             box-sizing: border-box;
 	width: $width;
 	margin: 0 auto;	
 }
