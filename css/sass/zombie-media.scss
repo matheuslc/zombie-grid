@@ -1,0 +1,49 @@
+// Name: Zombie Grid
+// Author: Matheus Lucca do Carmo / me@matheuslc.com
+// Version: 0.0.1
+//--------------------------------------------
+
+
+// Variables
+//--------------------------------------------
+
+// Feel free to change that values
+
+$small-querie: 767px;  
+$medium-querie: 992px;
+$large-querie: 1200px;
+
+// Media Queries
+//--------------------------------------------
+
+// Small Devices
+
+@media (max-width: $media-querie) {
+
+  [class*="zombie"]{
+    clear: both;
+    display: block;
+    float: none;
+    width: auto;
+  }
+
+}
+
+// Medium Devices
+
+@media (min-width: $small-querie) and (max-width: $medium-querie) {
+
+
+
+}
+
+
+// Large Devices
+
+@media (min-width: $medium-querie) and (max-width: $large-querie) {
+
+	
+}
+
+
+
