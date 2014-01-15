@@ -48,6 +48,9 @@ $width: 100%; // If you want a fixed grid, change to 960px
   .zombie-#{$j}{
     float: left;
     @extend %border-box;
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
     width: ($width / $columns ) * $j;
   }
 }
@@ -55,10 +58,10 @@ $width: 100%; // If you want a fixed grid, change to 960px
 // Wrapper (for fixed grid)
 
 %wrapper {
-	@extend %clearfix;
-	display: block;
-	width: $width;
-	margin: 0 auto;	
+        @extend %clearfix;
+        display: block;
+        width: $width;
+        margin: 0 auto;        
 }
 
 // border-box placeholder
