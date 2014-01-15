@@ -46,15 +46,11 @@ $width: 100%; // If you want a fixed grid, change to 960px
   // Thanks for Lucas Bebber for that help http://codepen.io/lbebber/
   $j: $columns - $i;
   .zombie-#{$j}{
-<<<<<<< HEAD
     float: left;
     @extend %border-box;
-=======
     -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
              box-sizing: border-box;
-    float: left;
->>>>>>> 0c1367804a49574343ead51b090625b57c29fbde
     width: ($width / $columns ) * $j;
   }
 }
