@@ -18,7 +18,7 @@ $large-querie: 1200px;
 
 // Small Devices
 
-@media (max-width: $media-querie) {
+@media (max-width: $small-querie) {
 
   [class*="zombie"]{
     clear: both;
