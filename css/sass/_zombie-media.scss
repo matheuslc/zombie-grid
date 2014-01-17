@@ -16,7 +16,7 @@
 
 // Small Devices
 
-@include zombie-grid(true,0px,768px) {
+@include zombie-grid(true,0px,768px,"r") {
 	.brain {
 		@extend %zombie-r-12;
 	}
@@ -24,12 +24,12 @@
 
 // Medium Devices
 
-@include zombie-grid(true,768px,978px) {
+@include zombie-grid(true,768px,978px,"b") {
 
 }
 
 // Large Devices
 
-@include zombie-grid(true, 978px, 1200) {
+@include zombie-grid(true, 978px, 1200,"z") {
 
 }
