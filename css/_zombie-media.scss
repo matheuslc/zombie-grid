@@ -12,18 +12,17 @@
 
 // Feel free to change that values
 
-$small-querie: 767px;  
-$medium-querie: 992px;
-$large-querie: 1200px;
-
-
-
 // Media Queries
 //--------------------------------------------
+// Really small devies
+
+
+
+
 
 // Small Devices
 
-@include grid(true,0px,768px){
+@include zombie-grid(true,0px,768px,"r"){
 
 	.zombie {
 		height: 70%;
@@ -67,5 +66,41 @@ $large-querie: 1200px;
 
 	.btn-example {
 		margin: 1% 3%;
+	}
+}
+
+
+@include zombie-grid(true,0px,320px,"b") {
+	
+	.brain-title {
+		font-size: 3rem;
+		margin: 30% 0 0 0;
+	}
+	
+	.quality {
+		margin: 3% 15%;
+	}
+
+	.quality-item {
+		font-size: 1.2rem;
+	}
+
+	.getting-started {
+		margin: 10% 0;
+		padding: 0 1%;
+	}
+
+	.started-item {
+		font-size: 0.8rem;
+	}
+	
+	.btn-download {
+		@extend %zombie-b-5;
+		margin: 15% 2% 0 2%;
+		font-size: 1.2rem;
+	}
+
+	.btn-example {
+		margin: 1% 2%;
 	}
 }

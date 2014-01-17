@@ -41,7 +41,7 @@ $grid-width: 100%;
  
 // Mixin that generate all that magic
  
-@mixin grid($media: false, $mediamin: 0px , $mediamax: 0px, $columns: $grid-columns, $width: $grid-width){
+@mixin zombie-grid($media: false, $mediamin: 0px , $mediamax: 0px, $columns: $grid-columns, $width: $grid-width){
   // Users want media querie?
   @if( ($media != true)) {
   // No!

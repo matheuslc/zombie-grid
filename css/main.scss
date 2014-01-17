@@ -53,7 +53,7 @@ body {
 // BRAIN
 //----------------------------------------------
 
-@include grid(false){
+@include zombie-grid(false){
 
 .zombie {
 	@extend %zombie-12;
