@@ -43,7 +43,7 @@ $grid-width: 100%;
  
 // Mixin that generate all that magic
  
-@mixin zombie-grid($media: false, $mediamin: 0px , $mediamax: 0px, $columns: $grid-columns, $width: $grid-width){
+@mixin zombie-grid($media: false, $mediamin: 0px , $mediamax: 0px, $prefix: "", $columns: $grid-columns, $width: $grid-width){
   // Users want media querie?
   @if( ($media != true)) {
   // No!
@@ -70,7 +70,7 @@ $grid-width: 100%;
        @for $i from 0 to $columns {
   // Thanks for Lucas Bebber for that help http://codepen.io/lbebber/
           $j: $columns - $i;
-          %zombie-r-#{$j}{
+          %zombie-#{$prefix}-#{$j}{
            float: left;
                  width: ($width / $columns) * $j;
                  -webkit-box-sizing: border-box;
