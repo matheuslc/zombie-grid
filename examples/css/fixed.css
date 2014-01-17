@@ -1,133 +1,118 @@
-/**
- * Fixed Example using Zombie Grid
- */
-/**
- * Name: Zombie Grid
- * Author: Matheus Lucca do Carmo / me@matheuslc.com
- * Version: 0.0.1
- */
-/* line 17, ../../css/sass/zombie-grid.scss */
+/* line 20, ../../css/sass/_zombie-grid.scss */
 body {
-  width: 100%;
-  margin: 0;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-12, header {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-11 {
-  display: inline;
-  float: left;
-  width: 91.66667%;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-10 {
-  display: inline;
-  float: left;
-  width: 83.33333%;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-9 {
-  display: inline;
-  float: left;
-  width: 75%;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-8, article {
-  display: inline;
-  float: left;
-  width: 66.66667%;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-7 {
-  display: inline;
-  float: left;
-  width: 58.33333%;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-6 {
-  display: inline;
-  float: left;
-  width: 50%;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-5 {
-  display: inline;
-  float: left;
-  width: 41.66667%;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-4, aside {
-  display: inline;
-  float: left;
-  width: 33.33333%;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-3 {
-  display: inline;
-  float: left;
-  width: 25%;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-2 {
-  display: inline;
-  float: left;
-  width: 16.66667%;
-}
-
-/* line 29, ../../css/sass/zombie-grid.scss */
-.zombie-1 {
-  display: inline;
-  float: left;
-  width: 8.33333%;
-}
-
-/* line 37, ../../css/sass/zombie-grid.scss */
-.wrapper {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-}
-
-/* line 48, ../../css/sass/zombie-grid.scss */
-body, .wrapper {
   *zoom: 1;
 }
-/* line 52, ../../css/sass/zombie-grid.scss */
-body:before, .wrapper:before, body:after, .wrapper:after {
+/* line 24, ../../css/sass/_zombie-grid.scss */
+body:before, body:after {
   content: "";
   display: table;
 }
-/* line 56, ../../css/sass/zombie-grid.scss */
-body:after, .wrapper:after {
+/* line 28, ../../css/sass/_zombie-grid.scss */
+body:after {
   clear: both;
 }
 
-/* line 21, fixed.scss */
-header {
-  background-color: red;
+/* line 39, ../../css/sass/_zombie-grid.scss */
+body {
+  margin: 0;
 }
 
-/* line 27, fixed.scss */
-article {
-  background-color: blue;
+/* line 12, fixed.scss */
+body {
+  width: 970px;
+  margin: 0 auto;
+  font-size: 62.5%;
 }
 
-/* line 32, fixed.scss */
-aside {
-  background-color: yellow;
+/* line 54, ../../css/sass/_zombie-grid.scss */
+.brain-wrapper, .arm-wrapper, .eye-wrapper {
+  float: left;
+  width: 970px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 54, ../../css/sass/_zombie-grid.scss */
+.arm-right {
+  float: left;
+  width: 646.66667px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 54, ../../css/sass/_zombie-grid.scss */
+.arm-left, .eye-right, .eye-mid, .eye-left {
+  float: left;
+  width: 323.33333px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 54, ../../css/sass/_zombie-grid.scss */
+.brain {
+  float: left;
+  width: 80.83333px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 30, fixed.scss */
+.brain {
+  background-color: #2c3e50;
+  padding: 2rem 0;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+/* line 41, fixed.scss */
+.brain, .arm-right, .arm-left, .eye-wrapper, .eye-right, .eye-mid, .eye-left {
+  border: 0 solid #fff;
+}
+
+/* line 45, fixed.scss */
+.arm-wrapper {
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* line 53, fixed.scss */
+.arm-right {
+  background-color: #8e44ad;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+/* line 62, fixed.scss */
+.arm-left {
+  padding: 2rem 0;
+  background-color: #2980b9;
+}
+
+/* line 70, fixed.scss */
+.eye-wrapper {
+  background-color: #16a085;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* line 79, fixed.scss */
+.eye-right {
+  padding: 2rem 0;
+}
+
+/* line 86, fixed.scss */
+.eye-mid {
+  padding: 2rem 0;
+}
+
+/* line 93, fixed.scss */
+.eye-left {
+  padding: 2rem 0;
 }

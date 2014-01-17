@@ -1,36 +1,100 @@
-/**
- * Fixed Example using Zombie Grid
- */
+// Name: Zombie Grid Fixed Example
+// Author: Matheus Lucca do Carmo / me@matheuslc.columns
 
 
-// Import Zombie Grid
+// import zombie-grid
 
-@import '../../css/sass/zombie-grid';
+@import '../../css/sass/_zombie-grid.scss';
 
+// Overwide $grid-width
+$grid-width: 970px;
 
-// Set $width variable to 960px
-
-$width: 960px;
-
-// Style bro
-
-.wrapper {
-	@extend %wrapper;
+body {
+	@extend %zombie-grid;
+	// Center
+	width: $grid-width;
+	margin: 0 auto;
+	font-size: 62.5%;
 }
 
-header {
-	@extend .zombie-12;
-	// set a background color to better view
-	background-color: red;
-}
+// Start the grid
+// False = no media querie
 
-article {
-	@extend .zombie-8;
-	background-color: blue;
-}
+@include zombie-grid(false) {
+	// all css here
+	
+	.brain-wrapper {
+		@extend %zombie-12;
+	}
 
-aside {
-	@extend .zombie-4;
-	background-color: yellow;
-}
+	.brain {
+		@extend %zombie-1;
+		@extend %border;
+		background-color: #2c3e50;
+		padding: 2rem 0;
+		text-align: center;
+		color: #fff;
+		font-size: 1.6rem;
 
+	}
+
+	%border {
+		border: 0 solid #fff;
+	}
+	
+	.arm-wrapper {
+		@extend %zombie-12;
+		color: #fff;
+		font-size: 1.6rem;
+		text-align: center;
+
+	}
+
+	.arm-right {
+		@extend %zombie-8;
+		@extend %border;
+		background-color: #8e44ad;
+		color: #fff;
+		padding: 2rem 0;
+
+	}
+
+	.arm-left {
+		@extend %zombie-4;
+		@extend %border;
+		padding: 2rem 0;
+		background-color: #2980b9;
+		
+	}
+	
+	.eye-wrapper {
+		@extend %zombie-12;
+		@extend %border;
+		background-color: #16a085;
+		color: #fff;
+		font-size: 1.6rem;
+		text-align: center;
+	}
+	
+	.eye-right {
+		@extend %zombie-4;
+		@extend %border;
+		padding: 2rem 0;
+
+	}
+
+	.eye-mid {
+		@extend %zombie-4;
+		@extend %border;
+		padding: 2rem 0;
+
+	}
+
+	.eye-left {
+		@extend %zombie-4;
+		@extend %border;
+		padding: 2rem 0;
+
+	}
+
+}
