@@ -87,7 +87,7 @@ body {
 }
 
 /* line 52, _zombie-grid.scss */
-.btn-download {
+.btn-download, .btn-example {
   float: left;
   width: 16.66667%;
   -webkit-box-sizing: border-box;
@@ -197,7 +197,7 @@ body {
 }
 
 /* line 160, main.scss */
-.btn-download {
+.btn-download, .btn-example {
   position: relative;
   height: 4rem;
   margin: 5% 3%;
@@ -208,7 +208,7 @@ body {
   text-shadow: 0 0.3rem 0.1rem #000;
 }
 
-/* line 176, main.scss */
+/* line 180, main.scss */
 .zombie-foot {
   position: relative;
   top: -5%;
@@ -218,7 +218,7 @@ body {
   font-size: 1rem;
   padding: 1% 0;
 }
-/* line 186, main.scss */
+/* line 190, main.scss */
 .zombie-foot a {
   text-decoration: none;
   color: #500072;
@@ -245,11 +245,79 @@ body {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   /* line 71, _zombie-grid.scss */
-  .brain {
+  .brain, .zombie-quality {
     float: left;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  }
+
+  /* line 71, _zombie-grid.scss */
+  .quality {
+    float: left;
+    width: 66.66667%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 71, _zombie-grid.scss */
+  .btn-download, .btn-example {
+    float: left;
+    width: 33.33333%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 28, _zombie-media.scss */
+  .zombie {
+    height: 70%;
+  }
+
+  /* line 32, _zombie-media.scss */
+  .brain {
+    margin: 0;
+  }
+
+  /* line 37, _zombie-media.scss */
+  .brain-title {
+    text-align: center;
+  }
+
+  /* line 41, _zombie-media.scss */
+  .brain-subtitle {
+    text-align: center;
+  }
+
+  /* line 45, _zombie-media.scss */
+  .zombie-quality {
+    margin: 0;
+  }
+
+  /* line 50, _zombie-media.scss */
+  .quality {
+    margin: 4% 25%;
+  }
+
+  /* line 55, _zombie-media.scss */
+  .zombie-download {
+    height: 35%;
+  }
+
+  /* line 59, _zombie-media.scss */
+  .getting-started {
+    margin: 6% 2%;
+  }
+
+  /* line 63, _zombie-media.scss */
+  .btn-download, .btn-example {
+    margin: 7% 3% 0% 3%;
+  }
+
+  /* line 68, _zombie-media.scss */
+  .btn-example {
+    margin: 1% 3%;
   }
 }

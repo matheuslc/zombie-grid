@@ -169,6 +169,10 @@ body {
 	text-shadow: 0 0.3rem 0.1rem #000;
 }
 
+.btn-example {
+	@extend .btn-download;
+}
+
 
 // FOOTER
 // -------------------------------------

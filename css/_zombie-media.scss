@@ -24,7 +24,48 @@ $large-querie: 1200px;
 // Small Devices
 
 @include grid(true,0px,768px){
+
+	.zombie {
+		height: 70%;
+	}
+
 	.brain {
 		@extend %zombie-r-12;
+		margin: 0;
+	}
+
+	.brain-title {
+		text-align: center;
+	}
+
+	.brain-subtitle {
+		text-align: center;
+	}
+
+	.zombie-quality {
+		@extend %zombie-r-12;
+		margin: 0;
+	}
+
+	.quality {
+		@extend %zombie-r-8;
+		margin: 4% 25%;
+	}
+
+	.zombie-download {
+		height: 35%;
+	}
+
+	.getting-started {
+		margin: 6% 2%;
+	}
+	
+	.btn-download {
+		@extend %zombie-r-4;
+		margin: 7% 3% 0% 3%;
+	}
+
+	.btn-example {
+		margin: 1% 3%;
 	}
 }
