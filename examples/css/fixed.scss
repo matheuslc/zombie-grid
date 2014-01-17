@@ -1,0 +1,37 @@
+/**
+ * Fixed Example using Zombie Grid
+ */
+
+
+// Import Zombie Grid
+
+@import '../../css/sass/zombie-grid';
+
+
+// Set $width variable to 960px
+
+$width: 960px;
+
+// Style bro
+
+.wrapper {
+	@extend %wrapper;
+}
+
+header {
+	@extend %zombie-12;
+	// set a background color to better view
+	background-color: red;
+}
+
+article {
+	@extend %zombie-8;
+	background-color: blue;
+}
+
+aside {
+	@extend %zombie-4;
+	background-color: yellow;
+}
+
+
