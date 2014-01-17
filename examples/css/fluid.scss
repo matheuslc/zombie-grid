@@ -1,0 +1,96 @@
+// Name: Zombie Grid Fixed Example
+// Author: Matheus Lucca do Carmo / me@matheuslc.columns
+
+
+// import zombie-grid
+
+@import '../../css/_zombie-grid.scss';
+
+
+
+body {
+	@extend %zombie-grid;
+	font-size: 62.5%;
+}
+
+// Start the grid
+// False = no media querie
+
+@include zombie-grid(false) {
+	// all css here
+	
+	.brain-wrapper {
+		@extend %zombie-12;
+	}
+
+	.brain {
+		@extend %zombie-1;
+		@extend %border;
+		background-color: #2c3e50;
+		padding: 2rem 0;
+		text-align: center;
+		color: #fff;
+		font-size: 1.6rem;
+
+	}
+
+	%border {
+		border: 0.1rem solid #fff;
+	}
+	
+	.arm-wrapper {
+		@extend %zombie-12;
+		color: #fff;
+		font-size: 1.6rem;
+		text-align: center;
+
+	}
+
+	.arm-right {
+		@extend %zombie-8;
+		@extend %border;
+		background-color: #8e44ad;
+		color: #fff;
+		padding: 2rem 0;
+
+	}
+
+	.arm-left {
+		@extend %zombie-4;
+		@extend %border;
+		padding: 2rem 0;
+		background-color: #2980b9;
+		
+	}
+	
+	.eye-wrapper {
+		@extend %zombie-12;
+		@extend %border;
+		background-color: #16a085;
+		color: #fff;
+		font-size: 1.6rem;
+		text-align: center;
+	}
+	
+	.eye-right {
+		@extend %zombie-4;
+		@extend %border;
+		padding: 2rem 0;
+
+	}
+
+	.eye-mid {
+		@extend %zombie-4;
+		@extend %border;
+		padding: 2rem 0;
+
+	}
+
+	.eye-left {
+		@extend %zombie-4;
+		@extend %border;
+		padding: 2rem 0;
+		
+	}
+
+}

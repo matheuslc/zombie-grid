@@ -1,0 +1,118 @@
+/* line 20, ../../css/sass/_zombie-grid.scss */
+body {
+  *zoom: 1;
+}
+/* line 24, ../../css/sass/_zombie-grid.scss */
+body:before, body:after {
+  content: "";
+  display: table;
+}
+/* line 28, ../../css/sass/_zombie-grid.scss */
+body:after {
+  clear: both;
+}
+
+/* line 39, ../../css/sass/_zombie-grid.scss */
+body {
+  margin: 0;
+}
+
+/* line 12, fixed.scss */
+body {
+  width: 970px;
+  margin: 0 auto;
+  font-size: 62.5%;
+}
+
+/* line 54, ../../css/sass/_zombie-grid.scss */
+.brain-wrapper, .arm-wrapper, .eye-wrapper {
+  float: left;
+  width: 970px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 54, ../../css/sass/_zombie-grid.scss */
+.arm-right {
+  float: left;
+  width: 646.66667px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 54, ../../css/sass/_zombie-grid.scss */
+.arm-left, .eye-right, .eye-mid, .eye-left {
+  float: left;
+  width: 323.33333px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 54, ../../css/sass/_zombie-grid.scss */
+.brain {
+  float: left;
+  width: 80.83333px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 30, fixed.scss */
+.brain {
+  background-color: #2c3e50;
+  padding: 2rem 0;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+/* line 41, fixed.scss */
+.brain, .arm-right, .arm-left, .eye-wrapper, .eye-right, .eye-mid, .eye-left {
+  border: 0 solid #fff;
+}
+
+/* line 45, fixed.scss */
+.arm-wrapper {
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* line 53, fixed.scss */
+.arm-right {
+  background-color: #8e44ad;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+/* line 62, fixed.scss */
+.arm-left {
+  padding: 2rem 0;
+  background-color: #2980b9;
+}
+
+/* line 70, fixed.scss */
+.eye-wrapper {
+  background-color: #16a085;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* line 79, fixed.scss */
+.eye-right {
+  padding: 2rem 0;
+}
+
+/* line 86, fixed.scss */
+.eye-mid {
+  padding: 2rem 0;
+}
+
+/* line 93, fixed.scss */
+.eye-left {
+  padding: 2rem 0;
+}
