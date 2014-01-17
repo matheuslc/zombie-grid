@@ -12,28 +12,9 @@ body:after {
   clear: both;
 }
 
-/* line 36, _zombie-grid.scss */
+/* line 37, _zombie-grid.scss */
 body {
   margin: 0;
-}
-
-/* line 48, _zombie-grid.scss */
-.zombie, .zombie-download {
-  float: left;
-  width: 100%;
-}
-
-/* line 48, _zombie-grid.scss */
-.brain, .zombie-quality {
-  float: left;
-  width: 41.66667%;
-}
-
-/* line 66, _zombie-grid.scss */
-.zombie, .zombie-download, .brain, .zombie-quality {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 @font-face {
@@ -44,12 +25,12 @@ body {
   font-style: normal;
 }
 
-/* line 31, main.scss */
+/* line 32, main.scss */
 html {
   height: 100%;
 }
 
-/* line 35, main.scss */
+/* line 36, main.scss */
 body {
   height: 100%;
   font-size: 62.5%;
@@ -69,7 +50,52 @@ body {
   /* W3C */
 }
 
-/* line 55, main.scss */
+/* line 52, _zombie-grid.scss */
+.zombie, .zombie-download, .zombie-foot {
+  float: left;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 52, _zombie-grid.scss */
+.getting-started {
+  float: left;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 52, _zombie-grid.scss */
+.brain {
+  float: left;
+  width: 33.33333%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 52, _zombie-grid.scss */
+.zombie-quality {
+  float: left;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 52, _zombie-grid.scss */
+.btn-download {
+  float: left;
+  width: 16.66667%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 58, main.scss */
 .zombie {
   position: relative;
   z-index: 10;
@@ -79,19 +105,22 @@ body {
   background: url("../img/grass.png") 0% 100% repeat-x, url("../img/thumb.png") 0% 90% no-repeat, url("../img/tree.png") 50% 80% no-repeat, url("../img/hand.png") 99% 90% no-repeat;
 }
 
-/* line 68, main.scss */
+/* line 71, main.scss */
 .brain {
   position: relative;
   margin: 3rem 5rem;
 }
 
-/* line 75, main.scss */
+/* line 81, main.scss */
 .brain-title,
-.brain-subtitle {
+.brain-subtitle,
+.started-title,
+.started-item,
+.zombie-quality {
   text-shadow: 1px 1px 1px #000;
 }
 
-/* line 79, main.scss */
+/* line 85, main.scss */
 .brain-title {
   font-family: "zombie";
   font-style: normal;
@@ -101,39 +130,126 @@ body {
   color: white;
 }
 
-/* line 88, main.scss */
+/* line 94, main.scss */
 .brain-subtitle {
   font-family: "Open Sans";
   font-weight: 300;
   font-size: 1.2rem;
-  text-transform: uppercase;
-  margin: 0.1rem 0;
+  margin: 1% 0;
   color: white;
 }
 
-/* line 97, main.scss */
+/* line 102, main.scss */
 .zombie-quality {
   position: relative;
-  margin: 3rem 0;
+  margin: 2% 10%;
+  color: #aaa;
 }
 
-/* line 103, main.scss */
+/* line 109, main.scss */
 .quality {
   list-style: none;
 }
 
-/* line 107, main.scss */
+/* line 113, main.scss */
 .quality-item {
   font-size: 1.4rem;
   font-family: "Open Sans";
   font-weight: 400;
 }
 
-/* line 119, main.scss */
+/* line 125, main.scss */
 .zombie-download {
   position: relative;
   z-index: 1;
   top: -5%;
   height: 25%;
-  background-color: red;
+  background-color: #cb7d33;
+}
+
+/* line 134, main.scss */
+.getting-started {
+  margin: 3% 2%;
+  list-style: none;
+}
+
+/* line 140, main.scss */
+.started-item {
+  font-size: 1.2rem;
+  line-height: 110%;
+  color: white;
+  margin: 0 2%;
+}
+
+/* line 147, main.scss */
+.started-title {
+  font-size: 1.6rem;
+  margin: 1% 0;
+  color: white;
+}
+
+/* line 153, main.scss */
+.btn {
+  border: 0;
+  background-color: #753400;
+  border-radius: 1rem;
+  border-bottom: 0.2rem solid #4f2200;
+}
+
+/* line 160, main.scss */
+.btn-download {
+  position: relative;
+  height: 4rem;
+  margin: 5% 3%;
+  font-size: 2.4rem;
+  font-family: "zombie";
+  font-style: normal;
+  color: #fff;
+  text-shadow: 0 0.3rem 0.1rem #000;
+}
+
+/* line 176, main.scss */
+.zombie-foot {
+  position: relative;
+  top: -5%;
+  background-color: white;
+  text-align: center;
+  font-style: normal;
+  font-size: 1rem;
+  padding: 1% 0;
+}
+/* line 186, main.scss */
+.zombie-foot a {
+  text-decoration: none;
+  color: #500072;
+}
+
+/* line 18, _zombie-grid.scss */
+body {
+  *zoom: 1;
+}
+/* line 22, _zombie-grid.scss */
+body:before, body:after {
+  content: "";
+  display: table;
+}
+/* line 26, _zombie-grid.scss */
+body:after {
+  clear: both;
+}
+
+/* line 37, _zombie-grid.scss */
+body {
+  margin: 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  /* line 71, _zombie-grid.scss */
+  .brain {
+    float: left;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }

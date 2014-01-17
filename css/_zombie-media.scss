@@ -1,0 +1,30 @@
+// Name: Zombie Grid
+// Author: Matheus Lucca do Carmo / me@matheuslc.com
+// Version: 0.0.1
+//--------------------------------------------
+
+
+
+// Variables
+//--------------------------------------------
+
+@import '_zombie-grid';
+
+// Feel free to change that values
+
+$small-querie: 767px;  
+$medium-querie: 992px;
+$large-querie: 1200px;
+
+
+
+// Media Queries
+//--------------------------------------------
+
+// Small Devices
+
+@include grid(true,0px,768px){
+	.brain {
+		@extend %zombie-r-12;
+	}
+}

@@ -23,6 +23,7 @@ $title-c: #fff;
 $subtitle-c: #fff;
 
 $text-c: #000; 
+$bg-footer: #CB7D33;
 
 //
 // GLOBALS
@@ -52,6 +53,8 @@ body {
 // BRAIN
 //----------------------------------------------
 
+@include grid(false){
+
 .zombie {
 	@extend %zombie-12;
 	position: relative;
@@ -66,13 +69,16 @@ body {
 }
 
 .brain {
-	@extend %zombie-5;
+	@extend %zombie-4;
 	position: relative;
 	margin: 3rem 5rem;
 }
 
 .brain-title,
-.brain-subtitle {
+.brain-subtitle,
+.started-title,
+.started-item,
+.zombie-quality {
 	text-shadow: 1px 1px 1px #000;
 }
 
@@ -89,15 +95,15 @@ body {
 	font-family: "Open Sans";
 	font-weight: 300;
 	font-size: 1.2rem;
-	text-transform: uppercase;
-	margin: 0.1rem 0;
+	margin: 1% 0;
 	color: $subtitle-c;
 }
 
 .zombie-quality {
-	@extend %zombie-5;
+	@extend %zombie-3;
 	position: relative;
-	margin: 3rem 0;
+	margin: 2% 10%;
+	color: #aaa;
 }
 
 .quality {
@@ -122,5 +128,68 @@ body {
 	z-index: 1;
 	top: -5%;
 	height: 25%;
-	background-color: red;
+	background-color: $bg-footer;
 }
+
+.getting-started {
+	@extend %zombie-6;
+	margin: 3% 2%;
+	list-style: none;
+}
+
+.started-item {
+	font-size: 1.2rem;
+	line-height: 110%;
+	color: $title-c;
+	margin: 0 2%;
+}
+
+.started-title {
+	font-size: 1.6rem;
+	margin: 1% 0;
+	color: $title-c;
+}
+
+.btn {
+	border: 0;
+	background-color: #753400;
+	border-radius: 1rem;
+	border-bottom: 0.2rem solid #4f2200;
+}
+
+.btn-download {
+	@extend %zombie-2;
+	position: relative;
+	height: 4rem;
+	margin: 5% 3%;
+	font-size: 2.4rem;
+	font-family: "zombie";
+	font-style: normal;
+	color: #fff;
+	text-shadow: 0 0.3rem 0.1rem #000;
+}
+
+
+// FOOTER
+// -------------------------------------
+
+.zombie-foot {
+	@extend %zombie-12;
+	position: relative;
+	top: -5%;
+	background-color: $title-c;
+	text-align: center;
+	font-style: normal;
+	font-size: 1rem;
+	padding: 1% 0;
+	
+	a {
+		text-decoration: none;
+		color: #500072;
+	}
+}
+
+}
+
+
+@import '_zombie-media';
