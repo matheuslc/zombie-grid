@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+  [class*="zombie"] {
+    clear: both;
+    display: block;
+    float: none;
+    width: auto;
+  }
+}

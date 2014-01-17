@@ -1,0 +1,126 @@
+// Author: Matheus Lucca do Carmo
+// Name: Zombie Grid project site
+// Thanks for GitHub Pages
+
+// License: MIT
+
+
+//
+// IMPORT ZOMBIE GRID <3
+//----------------------------------------------
+
+@import '_zombie-grid', 'fonts/_font';
+
+// SET GRID VARIABLES VALUES
+
+$columns: 12;
+$width: 100%;
+
+
+// VARIABLES
+
+$title-c: #fff;
+$subtitle-c: #fff;
+
+$text-c: #000; 
+
+//
+// GLOBALS
+//--------------------------------------------
+
+html {
+	height: 100%;
+}
+
+body {
+	@extend %zombie-grid;
+	height: 100%;
+	font-size: 62.5%;
+	background: #4f0f3e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4f0f3e 0%, #2d1828 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4f0f3e), color-stop(100%,#2d1828)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #4f0f3e 0%,#2d1828 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #4f0f3e 0%,#2d1828 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #4f0f3e 0%,#2d1828 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #4f0f3e 0%,#2d1828 100%); /* W3C */
+    
+}
+
+
+
+//
+// BRAIN
+//----------------------------------------------
+
+.zombie {
+	@extend %zombie-12;
+	position: relative;
+	z-index: 10;
+	height: 80%;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f0f3e', endColorstr='#2d1828',GradientType=0 ); /* IE6-9 */
+	background: url('../img/grass.png') 0% 100% repeat-x,
+	url('../img/thumb.png') 0% 90% no-repeat,
+	url('../img/tree.png') 50% 80% no-repeat,
+	url('../img/hand.png') 99% 90% no-repeat;
+	
+}
+
+.brain {
+	@extend %zombie-5;
+	position: relative;
+	margin: 3rem 5rem;
+}
+
+.brain-title,
+.brain-subtitle {
+	text-shadow: 1px 1px 1px #000;
+}
+
+.brain-title {
+	font-family: "zombie";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 4.2rem;
+	margin: 0.2rem 0;
+	color: $title-c;
+}
+
+.brain-subtitle {
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	margin: 0.1rem 0;
+	color: $subtitle-c;
+}
+
+.zombie-quality {
+	@extend %zombie-5;
+	position: relative;
+	margin: 3rem 0;
+}
+
+.quality {
+	list-style: none;
+}
+
+.quality-item {
+	font-size: 1.4rem;
+	font-family: "Open Sans";
+	font-weight: 400;
+}
+
+
+
+//
+// ZOMBIE DOWNLOAD
+//-------------------------------------------
+
+.zombie-download {
+	@extend %zombie-12;
+	position: relative;
+	z-index: 1;
+	top: -5%;
+	height: 25%;
+	background-color: red;
+}
