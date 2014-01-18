@@ -2,7 +2,7 @@
 
 Don't use your brain to create really simple grid, our zombie can do that for you.
 
-<a href="matheuslc.github.io/zombie-grid">Zombie Grid Site</a>
+<a href="http://matheuslc.github.io/zombie-grid">Zombie Grid Site</a>
 
 
 # What's?
