@@ -23,3 +23,14 @@ Simple.
 # Examples
 
 See examples folder
+
+
+# Credits
+
+[Lucas Bebber](http://codepen.io/lbebber/) [for that](https://github.com/matheuslc/zombie-grid/blob/master/css/sass/_zombie-grid.scss#L20-31).
+
+[Nicholas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/) [Clearfix hack](https://github.com/matheuslc/zombie-grid/blob/master/css/sass/_zombie-grid.scss#L16-27).
+
+[Luiz Felipe Tartarotti Fialho] (http://www.felipefialho.com/) [Optimize code and Media Query file util](https://github.com/matheuslc/zombie-grid/blob/master/css/sass/_zombie-grid.scss)
+
+[Diéssica Gurskas](https://github.com/diessicode) [help me organize the project](https://github.com/matheuslc/zombie-grid/issues?state=closed)

@@ -12,11 +12,7 @@
 $grid-columns: 12; // Set your columns
 $grid-width: 100%;
  
- 
-// Clearfix
-// by Nicholas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/
-//--------------------------------------------
- 
+
 %clearfix {
   *zoom:1;
  
@@ -44,12 +40,11 @@ $grid-width: 100%;
 // Mixin that generate all that magic
  
 @mixin zombie-grid($media: false, $mediamin: 0px , $mediamax: 0px, $prefix: "", $columns: $grid-columns, $width: $grid-width){
-  // Users want media querie?
+  // Users want media query?
   @if( ($media != true)) {
   // No!
  
   @for $i from 0 to $columns {
-  // Thanks for Lucas Bebber for that help http://codepen.io/lbebber/
   $j: $columns - $i;
   %zombie-#{$j}{
     float: left;
@@ -62,13 +57,12 @@ $grid-width: 100%;
   // All other styles
   @content;
  
-  // User want media querie?
+  // User want media query?
 } @else {
   // Yes!
   @if (($media == true)) {
     @media screen and (min-width: $mediamin) and (max-width: $mediamax){
        @for $i from 0 to $columns {
-  // Thanks for Lucas Bebber for that help http://codepen.io/lbebber/
           $j: $columns - $i;
           %zombie-#{$prefix}-#{$j}{
            float: left;
@@ -81,7 +75,7 @@ $grid-width: 100%;
         
       } // End for 
         @content; // All other styles
-    } // End Media Querie
+    } // End Media Query
   } // End @else if
 } // End @else
 } // End Mixin
@@ -89,7 +83,6 @@ $grid-width: 100%;
  
  
 // Wrapper (for fixed grid)
- 
 %wrapper {
         @extend %clearfix;
         display: block;
