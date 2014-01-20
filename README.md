@@ -27,7 +27,7 @@ See examples folder
 
 # Credits
 
-[Lucas Bebber](http://codepen.io/lbebber/) [for that](https://github.com/matheuslc/zombie-grid/blob/master/css/sass/_zombie-grid.scss#L20-31).
+[Lucas Bebber](http://codepen.io/lbebber/) [for that](https://github.com/matheuslc/zombie-grid/blob/master/css/sass/_zombie-grid.scss#48).
 
 [Nicholas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/) [Clearfix hack](https://github.com/matheuslc/zombie-grid/blob/master/css/sass/_zombie-grid.scss#L16-27).
 
